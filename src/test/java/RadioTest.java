@@ -45,7 +45,7 @@ public class RadioTest {
 
         radio.SetIncreaseVolume();
 
-        int expected = 10;
+        int expected = 0;
         int actual = radio.getCurrentVolume();
 
         assertEquals(expected, actual);
