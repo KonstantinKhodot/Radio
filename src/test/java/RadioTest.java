@@ -49,6 +49,20 @@ public class RadioTest {
         int expected = 0;
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void stationsCount() {
+        int stationsCount;
+        Radio radio = new Radio(stationsCount = 10);
+        radio.setCurrentRadioStation(9);
+
+        radio.next();
+
+        int actual = radio.getCurrentRadioStation();
+        int expected = 0;
+
+        assertEquals(expected, actual);
+    }
 }
 
 
